@@ -1,5 +1,5 @@
 Name: setxkbmap
-Version: 1.0.3
+Version: 1.0.4
 Release: %mkrel 1
 Summary: Set the keyboard using the X Keyboard Extension
 Group: Development/X11
@@ -19,9 +19,7 @@ options specified on the command line.
 %setup -q -n %{name}-%{version}
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
-		--x-libraries=%{_libdir}
-
+%configure
 %make
 
 %install
@@ -34,6 +32,5 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_bindir}/setxkbmap
-%{_mandir}/man1/setxkbmap*
-
+%{_mandir}/man1/setxkbmap.1.*
 
