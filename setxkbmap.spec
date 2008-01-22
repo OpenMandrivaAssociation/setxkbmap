@@ -1,15 +1,15 @@
 Name: setxkbmap
 Version: 1.0.4
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: Set the keyboard using the X Keyboard Extension
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 
-BuildRequires: libx11-devel >= 1.0.0
-BuildRequires: libxkbfile-devel >= 1.0.1
-BuildRequires: x11-util-macros >= 1.0.1
+BuildRequires: x11-util-macros	>= 1.1.5
+BuildRequires: libx11-devel	>= 1.1.3
+BuildRequires: libxkbfile-devel >= 1.0.4
 
 %description
 The setxkbmap command maps the keyboard to use the layout determined by the
@@ -33,4 +33,3 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/setxkbmap
 %{_mandir}/man1/setxkbmap.1.*
-
