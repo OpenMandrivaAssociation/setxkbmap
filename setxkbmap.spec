@@ -1,6 +1,6 @@
 Name: setxkbmap
-Version: 1.1.0
-Release: %mkrel 2
+Version: 1.2.0
+Release: %mkrel 1
 Summary: Set the keyboard using the X Keyboard Extension
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
