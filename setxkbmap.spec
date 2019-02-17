@@ -1,9 +1,9 @@
 Name:		setxkbmap
 Version:	1.3.1
-Release:	6
+Release:	7
 Summary:	Set the keyboard using the X Keyboard Extension
 Group:		Development/X11
-Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
 
 BuildRequires:	pkgconfig(x11) >= 1.0.0
