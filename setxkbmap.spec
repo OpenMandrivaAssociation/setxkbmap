@@ -1,6 +1,6 @@
 Name:		setxkbmap
-Version:	1.3.1
-Release:	7
+Version:	1.3.2
+Release:	1
 Summary:	Set the keyboard using the X Keyboard Extension
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -15,14 +15,14 @@ The setxkbmap command maps the keyboard to use the layout determined by the
 options specified on the command line.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/setxkbmap
